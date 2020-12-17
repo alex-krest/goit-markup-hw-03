@@ -1,0 +1,224 @@
+/*-----------Переменные цвета---*/
+:root {
+  --accent-color: #2196f3;
+  --text-color: #757575;
+  --basic-color: #212121;
+  --active-color: #ffffff;
+}
+/*-шрифт на все кроме ссылок и кнопок*/
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+/*- обнуляем отступы*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+img,
+
+/*убираем декор у ссылок и у списков*/
+a {
+  text-decoration: none;
+  color: var(--basic-color);
+}
+li {
+  list-style-type: none;
+}
+/*-КОНТЕЙНЕР ДЛЯ ВСЕХ СТРАНИЦ*/
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+/* ---ШАПКА----*/
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+.logo {
+  min-width: 145px;
+  margin-top: 24px;
+  margin-right: 93;
+  margin-bottom: 25px;
+  /* margin-left: 215px; */
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  /* margin-left: 93px; */
+}
+.list-site:not(:last-child) {
+  margin-right: 50px;
+}
+.adress-header {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.nav-mail {
+  margin-right: 50px;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  /*color:var(--active-color);*/
+}
+span {
+  color: var(--accent-color);
+}
+.nav.is-current {
+  color: var(--accent-color);
+}
+.nav:hover,
+.nav:focus {
+  color: var(--accent-color);
+}
+.nav-mail,
+.nav-phone {
+  font-style: normal;
+  color: var(--text-color);
+}
+.nav-mail:hover {
+  color: var(--accent-color);
+}
+.nav-mail:focus {
+  color: var(--accent-color);
+}
+.nav-phone:hover {
+  color: var(--accent-color);
+}
+.nav-phone:focus {
+  color: var(--accent-color);
+}
+/*--секция 1 ГЕРОЙ--*/
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /*color:var(--active-color)*/
+}
+.btn-hero {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--active-color);
+  background-color: var(--accent-color);
+}
+/*--секция 2 список--*/
+.list-caption {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--basic-color);
+}
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/*--секция 3,4 --*/
+.work-caption,
+.command-caption {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--basic-color);
+}
+.command-subject {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--basic-color);
+}
+.command-text {
+  font-style: normal;
+  font-weight: 400l;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/*--footer--*/
+.text-footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  /*color: var(--active-color);*/
+}
+.footer-mail,
+.footer-phone {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  /*color: rgba(255, 255, 255, 0.6);*/
+}
+/* СТИЛИ ДЛЯ ПОРТФОЛИО */
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--basic-color);
+}
+.btn:hover,
+.btn:focus {
+  color: var(--active-color);
+  background-color: var(--accent-color);
+}
+.article-caption {
+  font-weight: 700d;
+  font-size: 18px;
+  line-height: 2x;
+  letter-spacing: 0.06em;
+  color: var(--basic-color);
+}
