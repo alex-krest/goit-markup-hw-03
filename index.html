@@ -18,9 +18,9 @@
   </head>
 
   <body>
-    <div class="container">
       <!--------ШАПКА------->
       <header class="header">
+<div class="container">
         <a class="logo" href="/"><span>Web</span>Studio </a>
         <nav class="navigation">
           <ul class="site-nav">
@@ -48,19 +48,22 @@
               >
             </address>
           </li>
-        </ul>
+		  </ul>
+		</div>
       </header>
       <main>
         <!-----секция 1 герой---------------->
         <section class="hero">
-          <h1 class="hero-title">
+			  <div class="container">
+				  <h1 class="hero-title">
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <button class="btn-hero" type="button">Заказать услугу</button>
+          <button class="btn-hero" type="button">Заказать услугу</button></div>
+          
         </section>
         <!------секция 2 list список---------------->
         <section class="list">
-          <h2 class="visually-hiden">Особенности</h2>
+			  <div class="container"> <h2 class="visually-hiden">Особенности</h2>
           <ul class="list-article">
             <li class="list-item">
               <h3 class="list-caption">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
@@ -90,11 +93,12 @@
                 плановых заданий.
               </p>
             </li>
-          </ul>
+          </ul></div>
+         
         </section>
         <!---секция 3 work чем мы занимаемся-------------->
         <section class="work">
-          <h2 class="work-caption">Чем мы занимаемся</h2>
+			  <div class="container"> <h2 class="work-caption">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="work-img">
               <img
@@ -120,11 +124,12 @@
                 height="294"
               />
             </li>
-          </ul>
+          </ul></div>
+         
         </section>
         <!-----секция 4 command наша команда-------------->
         <section class="command">
-          <h2 class="command-caption">Наша команда</h2>
+			  <div class="container"> <h2 class="command-caption">Наша команда</h2>
           <ul class="command-list">
             <li class="command-article">
               <img
@@ -170,17 +175,19 @@
               <h3 class="command-subject">Михаил Ермаков</h3>
               <p class="command-text">UI Designer</p>
             </li>
-          </ul>
+          </ul></div>
+         
         </section>
       </main>
       <!-- ----------footer---------- -->
       <footer>
-        <a class="logo-footer" href="/"><span>Web</span>Studio</a>
+			<div class="container"><a class="logo-footer" href="/"><span>Web</span>Studio</a>
         <address class="footer">
           <p class="text-footer">г. Киев, пр-т Леси Украинки, 26</p>
           <p class="footer-mail">info@devstudio.com</p>
           <p class="footer-phone">+38 096 111 11 11</p>
-        </address>
+        </address></div>
+        
       </footer>
     </div>
   </body>
