@@ -8,6 +8,7 @@
 }
 /*-шрифт на все кроме ссылок и кнопок*/
 body {
+  max-width: 1600px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -123,9 +124,8 @@ span {
   background-color: var(--hero-color);
   height: 600px;
   text-align: center;
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
-  padding: 200px 452px 200px 452px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -162,7 +162,8 @@ span {
 .list {
   display: flex;
   align-items: center;
-  padding: 94px 215px 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .list-article {
   display: flex;
@@ -192,7 +193,7 @@ span {
 }
 /*--секция 3 --*/
 .work {
-  padding: 0px 215px 94px 215px;
+  padding-bottom: 94px;
 }
 .work-list {
   display: flex;
@@ -215,7 +216,8 @@ span {
 }
 /* ------секция 4--------------- */
 .command {
-  padding: 94px 215px 94px 215px;
+  padding-bottom: 94px;
+
   background-color: #f5f4fa;
 }
 .command-list {
@@ -249,7 +251,8 @@ span {
 footer {
   display: block;
   background-color: var(--hero-color);
-  padding: 60px 215px;
+  padding-bottom: 60px;
+  padding-top: 60px;
   margin: 0 auto;
 }
 .logo-footer {
@@ -279,10 +282,15 @@ footer {
 }
 /* СТИЛИ ДЛЯ ПОРТФОЛИО */
 /* --------кнопки--------- */
+.total {
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .items {
-  margin-top: 94px;
   margin-bottom: 34px;
 }
+
 .butons {
   display: flex;
   justify-content: center;
@@ -309,30 +317,29 @@ footer {
   background-color: var(--accent-color);
 }
 /* ------карточки----------- */
-ul.article {
+.article {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
-  /* outline: 4px solid red; */
-  padding: 64px 215px 64px 185px;
+  margin-left: -30px;
 }
 .article-item {
-  display: block;
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100 / 3-15px);
+  flex-basis: calc(100% / 3-33px);
+  border: 1px solid #eae2e2;
 }
-.article-img {
-  margin-bottom: 20px;
+.item {
+  padding: 20px 24px;
 }
 .article-caption {
-  font-weight: 700d;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2x;
   letter-spacing: 0.06em;
   color: var(--basic-color);
-  margin: 0px 24px 4px 24px;
+  padding-bottom: 4px;
 }
 .text {
-  margin: 0px 24px 20px 24px;
+  color: var(--text-color);
 }
