@@ -8,7 +8,7 @@
 }
 /*-шрифт на все кроме ссылок и кнопок*/
 body {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -44,7 +44,8 @@ li {
 /* ---ШАПКА----*/
 .header {
   border-bottom: 1px solid #ececec;
-  padding: 24px 215px 25px 215px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header .container {
   display: flex;
@@ -220,6 +221,9 @@ span {
 
   background-color: #f5f4fa;
 }
+.command-caption {
+  padding-top: 94px;
+}
 .command-list {
   display: flex;
   align-items: center;
@@ -327,15 +331,15 @@ footer {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3-33px);
-  border: 1px solid #eae2e2;
 }
 .item {
   padding: 20px 24px;
+  border: 1px solid #eae2e2;
 }
 .article-caption {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2x;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--basic-color);
   padding-bottom: 4px;
