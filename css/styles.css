@@ -24,7 +24,9 @@ body {
   margin: 0;
   padding: 0;
 }
-img,
+img {
+  display: block;
+}
 
 /*убираем декор у ссылок и у списков*/
 a {
@@ -218,11 +220,8 @@ span {
 /* ------секция 4--------------- */
 .command {
   padding-bottom: 94px;
-
-  background-color: #f5f4fa;
-}
-.command-caption {
   padding-top: 94px;
+  background-color: #f5f4fa;
 }
 .command-list {
   display: flex;
@@ -335,6 +334,7 @@ footer {
 .item {
   padding: 20px 24px;
   border: 1px solid #eae2e2;
+  border-top: none;
 }
 .article-caption {
   font-weight: 700;
